@@ -1,0 +1,578 @@
+@import "font-face";
+@import "variables";
+
+.body {
+  font-family: Larsseit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $yellow;
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 28px;
+    margin-top: 20px;
+    background-color: $aquamarine;
+    border-radius: 28px;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-size: 24px;
+  color: $aquamarine;
+}
+
+.menu-mobile {
+  display: none;
+  position: relative;
+  padding: 5px;
+  border: 2px solid $aquamarine;
+  border-radius: 10px;
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+  }
+
+  &__close:hover {
+    opacity: 1;
+  }
+
+  &__close:before, &__close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+  }
+
+  &__close:before {
+    transform: rotate(45deg);
+  }
+
+  &__close:after {
+    transform: rotate(-45deg);
+  }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    right: -11px;
+    top: -12px;
+    background-color: white;
+  }
+
+  &__link {
+    display: flex;
+    padding: 20px;
+    border: 1px solid black;
+    min-width: 100px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    content: "";
+    height: 5px;
+    width: 30px;
+    border-bottom: 17px double $aquamarine;
+    border-top: 6px solid $aquamarine;
+  }
+}
+
+.menu-desktop {
+  display: flex;
+
+  &__link {
+    text-decoration: none;
+    margin: 0 10px;
+  }
+}
+
+.article-thrivetalk {
+  display: flex;
+  background-color: #F4F9E2;
+  display: flex;
+  padding: 120px 80px 120px;
+
+  &__info {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding-right: 40px;
+    padding-left:100px;
+  }
+
+  &__img {
+    width: 300px;
+    height: 300px;
+    border-radius: 22%;
+    box-shadow: 0 0 7px #666;
+  }
+
+  &__text {
+    max-width: 530px;
+  }
+
+  &__btn {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__btn_left {
+    background-color: $orange;
+    padding: 10px;
+    margin-right: 10px
+  }
+
+  &__btn_right {
+    color: $orange;
+    padding: 10px;
+  }
+}
+
+.article-why-thrive {
+  display: flex;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    background-color: #62D0DF;
+    color: white;
+    padding: 40px;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 24px;
+    width: 80%;
+    line-height: 33px
+  }
+
+  &__img {
+    display: flex;
+    width: 45%;
+  }
+}
+
+.article-about-us {
+  display: flex;
+  justify-content: space-around;
+  padding: 156px 0;
+
+  &__title {
+    padding-left: 106px;
+    font-size: 16px;
+    min-width: 190px
+  }
+
+  &__text {
+    padding-left: 160px;
+    font-size: 24px;
+    padding-right: 60px
+  }
+}
+
+.article-we-can-help {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 16px;
+    color: #22356F;
+    padding-bottom: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+  }
+
+  &__section-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 360px;
+    color: white;
+  }
+
+  &__section-info_pink {
+    background-color: $pink;
+  }
+
+  &__section-info_green {
+    background-color: $green;
+  }
+
+  &__section-info_aquamarine {
+    background-color: $aquamarine;
+  }
+
+  &__section-info_blue {
+    background-color: $blue;
+  }
+
+  &__icon {
+    height: 5px;
+    width: 5px;
+    background-color: $orange;
+    border-radius: 100%;
+    margin-left: 15px;
+  }
+
+  &__text {
+    display: flex;
+    padding-left: 15px;
+  }
+}
+
+.table-of-benefits {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__row {
+    display: flex;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold
+  }
+}
+
+.article-img {
+  display: flex;
+  width: 45%;
+}
+
+.article-you-should-also-know {
+  display: flex;
+  color: #22356F;
+  font-size: 24px;
+
+  &__info {
+    display: flex;
+    padding: 103px 20px 42px 150px;
+    flex-direction: column;
+    justify-content: space-around
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__title_orange {
+    color: $orange;
+  }
+}
+
+.article-contact-us {
+  display: flex;
+  color: white;
+
+  &__info {
+    display: flex;
+    background-color: #22356F;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__title_bold {
+    font-size: 32px;
+  }
+
+  &__title_aquamarine {
+    color: $aquamarine;
+  }
+
+  &__text {
+    font-size: 24px;
+    max-width: 80%;
+  }
+}
+
+.footer {
+  &__top-block {
+    display: flex;
+  }
+
+  &__wrapper-img {
+    height: 380px;
+  }
+
+  &__info-table {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 78px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+    padding: 20px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__bottom-block {
+    background-color: $aquamarine;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+  }
+
+  &__icon {
+    font-size: 12px;
+    padding-left: 179px;
+    line-height: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
+/*@media screen*/
+
+@media screen and (max-width: 1040px) {
+  .footer__img {
+    max-width: 400px;
+    margin: 40px 0 40px 20px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .article-about-users {
+    display: none ;
+  }
+
+  .article-contact-us {
+    display: none ;
+  }
+
+  .article-you-should-also-know {
+    display: none;
+  }
+
+  .table-of-benefits {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    &__row {
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__column {
+      border: 1px solid black;
+      margin-top: 30px;
+    }
+  }
+
+  .article-why-thrive {
+    flex-wrap: wrap;
+
+    &__img {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    &__info {
+      text-align: center;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .article-thrivetalk {
+    &__info {
+      width: 50%;
+      padding-left: 0;
+    }
+
+    &__img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .footer {
+    &__img {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    &__wrapper-img {
+      margin: 0 auto;
+      height: auto;
+    }
+
+    &__top-block {
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    &__info-table {
+      padding: 50px 40px;
+    }
+
+    &__column {
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .article-about-us {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    font-size: 20px;
+
+    &__title {
+      padding-bottom: 20px;
+      font-size: 20px;
+    }
+
+    &__text {
+      padding: 0 40px;
+      text-align: center;
+    }
+  }
+
+  .article-we-can-help {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__section-info {
+      width: 50%;
+      height: 220px;
+      font-size: 18px;
+    }
+  }
+
+  .article-why-thrive__text {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .article-thrivetalk {
+    padding: 15px 25px 40px;
+
+    &__text {
+      display: none;
+    }
+
+    &__info {
+      padding: 0 10px 0 0;
+      font-size: 14px;
+    }
+
+    &__btn {
+      font-size: 10px;
+    }
+  }
+
+  .article-about-mission {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px 60px 20px;
+
+    &__img {
+      height: 150px;
+      width: 150px;
+      margin-top: 15px;
+    }
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+
+    &:hover .menu-mobile__nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header {
+    padding: 10px;
+    justify-content: space-between;
+
+    &__contacts {
+      display: none;
+    }
+  }
+
+  .footer {
+    &__column {
+      padding: 10px 5px;
+    }
+
+    &__bottom-block {
+      text-align: center;
+    }
+
+    &__icon {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article-thrivetalk {
+    &__info {
+      text-align: center;
+    }
+
+    &__btn {
+      flex-direction: column;
+    }
+  }
+}
