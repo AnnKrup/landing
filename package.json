@@ -7,7 +7,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styles": "node-sass -w ./scss -o ./css"
+    "styles": "node-sass -w ./scss -o ./css",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
